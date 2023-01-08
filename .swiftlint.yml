@@ -1,0 +1,7 @@
+custom_rules:
+  swiftui_state_private:
+    regex: '@(State|StateObject|ObservedObject|EnvironmentObject)\s+var'
+    message: 'SwiftUI @State/@StateObject/@ObservedObject/@EnvironmentObject properties should be private'
+  swiftui_environment_private:
+    regex: '@Environment\(\\\.\w+\)\s+var'
+    message: 'SwiftUI @Environment properties should be private'
